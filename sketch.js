@@ -22,9 +22,10 @@ function mousePressed() {
           Math.random() * 20 | 0,
           Math.random() * 50 + 50 | 0
         ];
+  expandingCircle(mouseX, mouseY, 0, step, strokeColor);
   window.setInterval(
     expandingCircle,
-    500,
+    3000 + 500 * Math.random(),
     mouseX,
     mouseY,
     0,
